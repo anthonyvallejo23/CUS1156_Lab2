@@ -10,12 +10,23 @@ public class UniqueWords
    public static int countUnique(ArrayList<String> list)
    {
 	  int count = 0;
+	  int wordMatch; 
 	  
       for (int i = 0; i < list.size(); i++)
-      {		 for (int j = 0; j < list.size(); j++)
-		 {
-			
+      {		 
+    	  wordMatch = 0;
+    	  for (int j = 0; j < list.size(); j++)
+    	  {
+			if (list.get(i).equals(list.get(j))) //if the current word is found in the list, increment the wordMatch variable
+			{
+				wordMatch++;
+			}
 		 }
+      
+      	if (wordMatch == 1) //if the word is found exactly once, then it increments the unique word counter
+      	{
+      		count++;
+      	}
       }
 	  return count;
    }
