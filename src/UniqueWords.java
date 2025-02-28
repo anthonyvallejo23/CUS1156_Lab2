@@ -7,6 +7,16 @@ public class UniqueWords
 		@param list ArrayList of strings to be examined
 		@return number of unique strings in the list
    */
+	
+	/* Project: Lab 2: Git
+	* Class: UniqueWords.java
+	* Author: Anthony Vallejo
+	* Date: February 27, 2025
+	* counts the number of unique strings in a list
+	* @param list ArrayList of strings to be examined
+	* @return number of unique strings in the list
+	*/
+	
    public static int countUnique(ArrayList<String> list)
    {
 	  int count = 0;
